@@ -1,0 +1,235 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Cairo', sans-serif;
+}
+
+body{
+    background:linear-gradient(to right,#f8ffff,#e6f7f7);
+}
+
+/* Container */
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* Header */
+header{
+    background:#00A8A8;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.nav-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+
+/* Logo */
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    color:white;
+    font-weight:700;
+    font-size:20px;
+}
+
+.logo img{
+    width:100px;
+    height:100px;
+    object-fit:contain;
+}
+
+/* Nav Links */
+.nav-links{
+    list-style:none;
+    display:flex;
+    gap:30px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    opacity:0.7;
+}
+
+/* Hero Section */
+.hero{
+    padding:80px 0;
+}
+
+.hero-container{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    align-items:center;
+    gap:40px;
+}
+
+.hero-text h1{
+    font-size:42px;
+    color:#00A8A8;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    color:#555;
+    margin-bottom:30px;
+    line-height:1.7;
+}
+
+.btn{
+    padding:14px 30px;
+    background:#00A8A8;
+    color:white;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:16px;
+    transition:0.3s;
+    box-shadow:0 5px 15px rgba(0,168,168,0.3);
+}
+
+.btn:hover{
+    background:#007b7b;
+    transform:translateY(-3px);
+}
+
+/* Images */
+.hero-images{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+
+.hero-images img{
+    width:160px;
+    height:160px;
+    border-radius:50%;
+    border:6px solid #00A8A8;
+    object-fit:cover;
+    box-shadow:0 8px 20px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.hero-images img:hover{
+    transform:scale(1.05);
+}
+
+/* Responsive */
+@media(max-width:900px){
+    .hero-container{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+
+    .hero-images{
+        margin-top:30px;
+    }
+}
+
+@media(max-width:500px){
+    .hero-text h1{
+        font-size:28px;
+    }
+
+    .hero-images img{
+        width:120px;
+        height:120px;
+    }
+
+    .nav-links{
+        display:none;
+    }
+}
+:root {
+    --clinic-color: #00a89e; /* اللون التركوازي من الصورة */
+    --clinic-dark: #007d75;
+    --glass-bg: rgba(255, 255, 255, 0.1);
+}
+
+.contact-section {
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    background-color: #f4f9f9; /* خلفية فاتحة تليق بالعيادات */
+}
+
+.contact-container {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(0, 168, 158, 0.1);
+    border-top: 5px solid var(--clinic-color);
+}
+
+.contact-container h2 {
+    color: var(--clinic-dark);
+    margin-bottom: 10px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group input, .input-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    outline: none;
+    transition: 0.3s;
+    text-align: right; /* للغة العربية */
+}
+
+.input-group input:focus, .input-group textarea:focus {
+    border-color: var(--clinic-color);
+    box-shadow: 0 0 5px rgba(0, 168, 158, 0.2);
+}
+
+.social-contact-btns {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 12px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* زر واتساب بلون العيادة أو لون الواتساب الأصلي */
+.whatsapp {
+    background-color: #25D366;
+}
+
+/* زر فيسبوك بلون العيادة لتوحيد التصميم */
+.facebook {
+    background-color: var(--clinic-color);
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
